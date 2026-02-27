@@ -265,6 +265,89 @@
     "variations": "Voor een volledig vegetarische versie laat je het vlees weg en voeg je extra kikkererwten toe. Wil je de soep romiger? Voeg een blik kokosmelk toe. Je kunt ook verse gember of harissa-pasta toevoegen voor extra pit."
   },
   {
+    "id": 11,
+    "title": "Bagel met hüttenkäse en aardbeien",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ0DWP95XeKLlVMN6yORbZzR3li1Is6IZcNA&s",
+    "category": "Lunch",
+    "description": "Knapperige bagel met romige hüttenkäse, verse aardbeien en verse basilicum.",
+    "intro": "Een snelle en heerlijke lunch die je in 15 minuten klaar hebt. De combinatie van zachte hüttenkäse, zoete aardbeien en verse basilicum op een knapperige bagel is simpelweg verrukkelijk. Perfect voor een lichte lunch of late brunch. Dit recept is voor 2 personen.",
+    "ingredients": [
+      { "name": "2 bagels", "description": "Bereid volgens de aanwijzingen op de verpakking." },
+      { "name": "8 aardbeien", "description": "Snijd de helft in partjes en de andere helft in schijfjes." },
+      { "name": "⅔ takje verse basilicum", "description": "Verwijder de blaadjes van de steel." },
+      { "name": "80 g hüttenkäse", "description": "Romig en licht, perfect als spread." },
+      { "name": "Zwarte peper", "description": "Versgemalen, naar smaak." }
+    ],
+    "steps": [
+      "Bereid de bagels volgens de aanwijzingen op de verpakking. Snijd de helft van de aardbeien in partjes en de andere helft in schijfjes.",
+      "Verwijder de basilicumblaadjes van de steel.",
+      "Besmeer de bagels met hüttenkäse en beleg met aardbeien en basilicum.",
+      "Breng op smaak met versgemalen zwarte peper en serveer direct."
+    ],
+    "variations": "Zin in iets extra's? Beleg de bagel dan eens met gerookte zalm, beenham of rosbief. Zijn de aardbeien niet in het seizoen? Kies dan voor ander fruit, bijvoorbeeld peer in het najaar."
+  },
+  {
+    "id": 12,
+    "title": "Toast met romescospread, aspergetips en courgette",
+    "image": "https://cdn.eatertainment.nl/content/uploads/2022/05/rsz_toast_met_romescospread_aspergetips_en_courgette_1.jpg?width=2048&height=1464&format=avif",
+    "category": "Lunch",
+    "description": "Geroosterd brood met zelfgemaakte romescospread van gegrilde paprika en pistache, aspergetips en courgette.",
+    "intro": "Deze toast met romescospread is een kleurrijke en voedzame lunch die er prachtig uitziet en heerlijk smaakt. De romescosaus, een Spaanse klassieker van gegrilde paprika, amandelen en pistache, is het perfecte bed voor knapperige gegrilde groenten. Klaar in 15 minuten en voor 2 personen.",
+    "ingredients": [
+      { "name": "4 sneetjes brood", "description": "Stevig brood werkt het beste, zoals zuurdesem of meergranen." },
+      { "name": "30 g gepelde pistachenootjes", "description": "Fijngehakt als garnering over de toast." },
+      { "name": "1 teentje knoflook", "description": "Gepeld, voor de romescospread." },
+      { "name": "2 gegrilde paprika's (uit pot)", "description": "Kant-en-klaar uit pot voor een snelle bereiding." },
+      { "name": "50 g amandelschaafsel", "description": "Geeft de romescospread zijn kenmerkende structuur." },
+      { "name": "⅛ tl chilivlokken", "description": "Voor een subtiele pittigheid in de spread." },
+      { "name": "⅛ tl gerookt paprikapoeder", "description": "Geeft de spread een rokerige diepte." },
+      { "name": "3 zwarte olijven (ontpit)", "description": "Voor extra smaak in de romescospread." },
+      { "name": "2½ el olijfolie", "description": "Voor de spread en het grillen van de groenten." },
+      { "name": "50 g groene aspergetips", "description": "Vers of diepvries." },
+      { "name": "¼ courgette", "description": "In dunne plakjes gesneden." },
+      { "name": "Zout en peper", "description": "Naar smaak." }
+    ],
+    "steps": [
+      "Hak de pistachenootjes fijn in een hakmolen en zet opzij.",
+      "Pel de knoflook en blend samen met de gegrilde paprika's, amandelen, chilivlokken, gerookt paprikapoeder, olijven en 1/5 van de olijfolie tot een gladde romescospread. Breng op smaak met zout en peper.",
+      "Snijd de courgette in plakjes. Besprenkel de aspergetips en courgette met de overige olijfolie.",
+      "Grill de groenten in een grillpan tot er mooie grillstrepen ontstaan.",
+      "Rooster de sneetjes brood in de broodrooster of in een droge koekenpan.",
+      "Smeer de geroosterde sneetjes royaal in met de romescospread.",
+      "Verdeel de gegrilde groenten over de spread en garneer met de gehakte pistachenootjes."
+    ],
+    "variations": "Voeg een gepocheerd ei toe voor extra eiwit. Bestrooi met verkruimelde feta voor een zoute touch. Geen asperges? Gegrilde champignons of paprikareepjes zijn een heerlijk alternatief."
+  },
+  {
+    "id": 13,
+    "title": "Watermeloensalade met krab",
+    "image": "https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "category": "Lunch",
+    "description": "Verfrissende salade van watermeloen met krabvlees, komkommer, verse munt en furikake.",
+    "intro": "Deze watermeloensalade met krab is een verrassende en verfrissende combinatie die perfect is voor een zomerse lunch. Watermeloen en krabvlees lijken misschien een ongewone combinatie, maar ze vullen elkaar perfect aan. Klaar in slechts 15 minuten. Dit recept is voor 2 personen.",
+    "ingredients": [
+      { "name": "900 g watermeloen", "description": "Geschild en in dobbelsteentjes gesneden." },
+      { "name": "100 g komkommer", "description": "Geschild en in blokjes gesneden." },
+      { "name": "2 el rijstazijn", "description": "Voor de frisse smaak van de salade." },
+      { "name": "160 g krabvlees in pekelwater", "description": "Uitgelekt." },
+      { "name": "½ tl versgemalen zwarte peper", "description": "Naar smaak." },
+      { "name": "½ tl zout", "description": "Naar smaak." },
+      { "name": "8 takjes verse munt", "description": "Verwijder de blaadjes van de steel." },
+      { "name": "2 tl furikake", "description": "Japans sesamkruidenmengsel, voor extra smaak en crunch." },
+      { "name": "2 tl mayonaise", "description": "Als romige topping." },
+      { "name": "1 limoen", "description": "In partjes gesneden, om erbij te serveren." }
+    ],
+    "steps": [
+      "Schil de watermeloen en snijd in dobbelsteentjes. Schil de komkommer en snijd in blokjes.",
+      "Meng de watermeloen en komkommer met de rijstazijn, het krabvlees, de zwarte peper en het zout in een kom. Meng goed door.",
+      "Verwijder de muntblaadjes van de steeltjes.",
+      "Verdeel de salade over de borden.",
+      "Beleg met verse muntblaadjes, furikake en een toef mayonaise.",
+      "Serveer met limoenschijfjes ernaast."
+    ],
+    "variations": "Vervang krabvlees door garnalen of gerookte zalm voor een andere zeevruchtensmaak. Geen furikake bij de hand? Gebruik dan geroosterde sesamzaadjes met een snufje zeewier. Voeg avocadoblokjes toe voor extra romigheid."
+  },
+  {
     "id": 7,
     "title": "Granola met koffie",
     "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=800&q=80",

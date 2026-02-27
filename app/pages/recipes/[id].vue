@@ -2,6 +2,7 @@
 import { useRoute } from 'vue-router'
 import recipes from '../../data/recipes.json'
 
+// Ik haal het id op uit de URL, bijvoorbeeld /recipes/3 geeft id = 3
 const route = useRoute()
 const recipeId = Number(route.params.id)
 const recipe = recipes.find(r => r.id === recipeId)
@@ -16,6 +17,7 @@ const recipe = recipes.find(r => r.id === recipeId)
           ← Terug naar recepten
         </NuxtLink>
 
+        <!-- Afbeelding alleen tonen als het recept bestaat -->
         <img
           v-if="recipe"
           :src="recipe.image"
@@ -65,6 +67,7 @@ const recipe = recipes.find(r => r.id === recipeId)
             :key="index"
             class="flex gap-4 bg-white rounded-2xl shadow-sm px-5 py-4"
           >
+            <!-- index + 1 omdat arrays beginnen bij 0 -->
             <span class="flex-shrink-0 w-8 h-8 rounded-full bg-orange-500 text-white text-sm font-bold flex items-center justify-center">
               {{ index + 1 }}
             </span>
@@ -84,6 +87,7 @@ const recipe = recipes.find(r => r.id === recipeId)
 
     </main>
 
+    <!-- Foutmelding als het recept-id niet bestaat in de data -->
     <div v-else class="flex flex-col items-center justify-center min-h-[60vh] text-center px-4">
       <p class="text-5xl mb-4">🍽️</p>
       <h2 class="text-2xl font-bold text-gray-700 mb-2">Recept niet gevonden</h2>
