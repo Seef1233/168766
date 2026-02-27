@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #ff7043;
+    --color-primary-dark: #e64a19;
+    --color-link: #3b82f6;
+    --color-link-hover: #1d4ed8;
+    --color-accent: #fb923c;
+    --color-tip-bg: #fff7ed;
+    --color-tip-border: #ffedd5;
+    --color-page-bg: #f9fafb;
+    --color-card-bg: #ffffff;
+    --color-card-border: #e5e7eb;
+    --color-text-heading: #111827;
+    --color-text-body: #374151;
+    --color-text-muted: #6b7280;
+  }
+}
+
+@layer base {
+  body {
+    background-color: var(--color-page-bg);
+    color: var(--color-text-body);
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+
+  h1, h2, h3 {
+    color: var(--color-text-heading);
+  }
+
+  a {
+    color: var(--color-link);
+    transition: color 0.2s;
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+@layer components {
+
+  .navbar {
+    background-color: var(--color-primary);
+    color: white;
+  }
+
+  .navbar a {
+    color: white;
+  }
+
+  .navbar a:hover {
+    color: var(--color-tip-bg);
+  }
+
+  .card {
+    background-color: var(--color-card-bg);
+    border: 1px solid var(--color-card-border);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    width: 250px;
+    transition: box-shadow 0.2s;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .card h3 {
+    margin-top: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-heading);
+  }
+
+  .card p {
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+    margin: 0.4rem 0 0.75rem;
+  }
+
+  .card a {
+    display: inline-block;
+    color: var(--color-link);
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .card a:hover {
+    color: var(--color-link-hover);
+  }
+
+  .recipe-back-link {
+    color: var(--color-link);
+    font-size: 0.875rem;
+  }
+
+  .recipe-back-link:hover {
+    color: var(--color-link-hover);
+  }
+
+  .recipe-tip-box {
+    background-color: var(--color-tip-bg);
+    border: 1px solid var(--color-tip-border);
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .ingredient-bullet {
+    background-color: var(--color-accent);
+  }
+}

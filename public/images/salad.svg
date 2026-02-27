@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4edda"/>
+      <stop offset="100%" style="stop-color:#a8d8a8"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f5f5f5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg2)"/>
+
+  <!-- Surface shadow -->
+  <ellipse cx="202" cy="248" rx="150" ry="22" fill="#5a9a5a" opacity="0.2"/>
+
+  <!-- Bowl -->
+  <path d="M80,180 Q80,270 200,270 Q320,270 320,180 Z" fill="url(#bowl)" stroke="#ddd" stroke-width="2"/>
+  <ellipse cx="200" cy="180" rx="120" ry="30" fill="white" stroke="#ddd" stroke-width="2"/>
+
+  <!-- Salad greens -->
+  <!-- Lettuce leaves -->
+  <ellipse cx="170" cy="168" rx="32" ry="18" fill="#3cb371" opacity="0.9" transform="rotate(-15,170,168)"/>
+  <ellipse cx="210" cy="163" rx="28" ry="16" fill="#2e8b57" opacity="0.85" transform="rotate(10,210,163)"/>
+  <ellipse cx="240" cy="170" rx="26" ry="14" fill="#3cb371" opacity="0.9" transform="rotate(-5,240,170)"/>
+  <ellipse cx="155" cy="178" rx="24" ry="13" fill="#228b22" opacity="0.85" transform="rotate(20,155,178)"/>
+  <ellipse cx="195" cy="158" rx="20" ry="11" fill="#32cd32" opacity="0.8" transform="rotate(-8,195,158)"/>
+  <ellipse cx="230" cy="160" rx="22" ry="12" fill="#3cb371" opacity="0.9" transform="rotate(15,230,160)"/>
+  <ellipse cx="175" cy="155" rx="18" ry="10" fill="#228b22" opacity="0.75" transform="rotate(-20,175,155)"/>
+
+  <!-- Cucumber slices -->
+  <circle cx="185" cy="172" r="13" fill="#90ee90" stroke="#3cb371" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="185" cy="172" r="7" fill="#c8f0c8" opacity="0.7"/>
+  <line x1="185" y1="165" x2="185" y2="179" stroke="#3cb371" stroke-width="1" opacity="0.6"/>
+  <line x1="178" y1="172" x2="192" y2="172" stroke="#3cb371" stroke-width="1" opacity="0.6"/>
+
+  <!-- Tomato pieces -->
+  <circle cx="220" cy="168" r="13" fill="#e03a1e" opacity="0.88"/>
+  <path d="M207,168 Q220,158 233,168" fill="#c93015" opacity="0.5"/>
+  <ellipse cx="215" cy="164" rx="4" ry="2" fill="#ff6b6b" opacity="0.5" transform="rotate(-20,215,164)"/>
+
+  <!-- Cherry tomato -->
+  <circle cx="250" cy="175" r="11" fill="#dc143c" opacity="0.9"/>
+  <ellipse cx="247" cy="170" rx="3" ry="2" fill="#ff8080" opacity="0.5"/>
+
+  <!-- Chicken pieces -->
+  <path d="M160,185 Q175,178 190,185 Q195,192 180,196 Q165,193 160,185Z" fill="#d4a056" opacity="0.9"/>
+  <path d="M162,186 Q174,181 186,186" fill="none" stroke="#b8860b" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Red onion rings -->
+  <ellipse cx="245" cy="188" rx="15" ry="8" fill="none" stroke="#9b2d7a" stroke-width="2.5" opacity="0.7" transform="rotate(-10,245,188)"/>
+  <ellipse cx="248" cy="186" rx="10" ry="5" fill="none" stroke="#9b2d7a" stroke-width="2" opacity="0.5" transform="rotate(-10,248,186)"/>
+
+  <!-- Croutons -->
+  <rect x="200" y="183" width="14" height="10" rx="2" fill="#c8a060" opacity="0.9" transform="rotate(10,207,188)"/>
+  <rect x="218" y="180" width="12" height="9" rx="2" fill="#b8903a" opacity="0.85" transform="rotate(-8,224,184)"/>
+
+  <!-- Dressing drizzle -->
+  <path d="M250,155 Q240,165 235,178 Q230,190 225,185" fill="none" stroke="#e8c840" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Label -->
+  <rect x="60" y="15" width="280" height="50" rx="10" fill="#1a5c2a" opacity="0.85"/>
+  <text x="200" y="48" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#fff" text-anchor="middle">Chicken Salad</text>
+</svg>

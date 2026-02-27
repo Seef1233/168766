@@ -1,0 +1,295 @@
+[
+  {
+    "id": 1,
+    "title": "Pasta Carbonara",
+    "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800&q=80",
+    "category": "Diner",
+    "description": "Classic Italian pasta with eggs and cheese.",
+    "intro": "Pasta carbonara komt uit Rome en is daar al heel lang een populair gerecht. Wat het zo bijzonder maakt? Je hebt maar een paar simpele ingrediënten nodig, en je creëert toch een heerlijk smaakvolle pasta met smeuïge en romige saus. In mijn pasta carbonara recept hou ik het zoals het oorspronkelijk bedoeld is: geen room, maar een authentieke carbonara saus van alleen eieren, kaas, spek en peper. Door de juiste verhoudingen en mijn stap voor stap uitleg lukt het altijd, ook als je niet zo vaak kookt.",
+    "ingredients": [
+      { "name": "200 g spaghetti", "description": "Spaghetti is klassiek, maar rigatoni of linguine werken ook goed." },
+      { "name": "3 eierdooiers", "description": "Gebruik verse eieren, ik gebruik middelgrote eieren, maat M." },
+      { "name": "50 g Pecorino Romano", "description": "Pecorino Romano is het meest authentiek; parmezaan kan als mildere optie." },
+      { "name": "100 g guanciale of spekblokjes", "description": "Guanciale heeft de meeste smaak, pancetta is een goed alternatief." },
+      { "name": "Zwarte peper", "description": "Versgemalen voor een pittige touch." },
+      { "name": "Zout", "description": "Voor het pastawater, gebruik ruim zout." }
+    ],
+    "steps": [
+      "Kook de pasta in ruim gezouten water gaar volgens de verpakking. Bewaar een kopje pastawater voor later.",
+      "Bak de guanciale of spekblokjes in een droge koekenpan op middelhoog vuur knapperig. Zet apart.",
+      "Klop in een kom de eierdooiers los met de geraspte kaas en een flinke snuf versgemalen zwarte peper.",
+      "Voeg een scheutje warm pastawater toe aan het eimengsel en roer goed door zodat de saus iets dunner wordt.",
+      "Haal de pan van het vuur. Voeg de uitgelekte pasta toe aan de spekpan en meng goed.",
+      "Giet het eimengsel erover en roer snel en constant zodat de saus romig wordt zonder te stollen. Voeg indien nodig meer pastawater toe.",
+      "Serveer direct met extra geraspte kaas en zwarte peper."
+    ],
+    "variations": "Liever geen vlees? Bak wat kastanjechampignons voor een lekkere vegetarische twist. Ook stukjes gebakken courgette, broccoli of doperwten doen het goed voor wat extra groenten. Wil je eens wat anders dan spek? Probeer dan krokant gebakken kipstukjes of chorizo. Zo geef je deze klassieker makkelijk je eigen draai."
+  },
+  {
+    "id": 2,
+    "title": "Kipfilet Salade",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&q=80",
+    "category": "Lunch",
+    "description": "Frisse salade met gegrilde kipfilet en een romige honingmosterddressing.",
+    "intro": "Deze kipfilet salade is een heerlijk lichte maaltijd die je in nog geen 20 minuten op tafel hebt. Perfect voor een zomerse lunch of een licht diner. De combinatie van sappige gegrilde kip, knapperige groenten en de licht zoete honingmosterddressing maakt dit gerecht tot een absolute favoriet. Dit recept is voor 2 personen.",
+    "ingredients": [
+      { "name": "2 kipfilets (±300 g)", "description": "Bestrooi met zout, peper en een snufje paprikapoeder voor extra smaak." },
+      { "name": "100 g gemengde sla", "description": "Gebruik een mix van rucola, veldsla of ijsbergsla voor variatie." },
+      { "name": "1 grote tomaat", "description": "In partjes gesneden. Cherry-tomaatjes werken ook goed." },
+      { "name": "½ komkommer", "description": "In halve plakjes gesneden." },
+      { "name": "½ rode paprika", "description": "In dunne reepjes gesneden voor kleur en zoetheid." },
+      { "name": "½ rode ui", "description": "Dun gesneden. Week ze even in koud water om de scherpe smaak te verzachten." },
+      { "name": "2 el olijfolie", "description": "Voor het bakken van de kipfilet." },
+      { "name": "2 el honing", "description": "Voor de dressing, geeft een lichte zoetheid." },
+      { "name": "1 el Dijonmosterd", "description": "Dijonmosterd werkt het best in deze dressing." },
+      { "name": "2 el citroensap", "description": "Vers geperst voor de frisste smaak." },
+      { "name": "Zout en peper", "description": "Naar smaak, voor de kip en de dressing." }
+    ],
+    "steps": [
+      "Bestrooi de kipfilets aan beide kanten royaal met zout, peper en paprikapoeder.",
+      "Verhit de olijfolie in een koekenpan op middelhoog vuur. Bak de kip 6-8 minuten per kant tot gaar en goudbruin. Laat 5 minuten rusten en snijd in dunne reepjes.",
+      "Maak de dressing: meng honing, Dijonmosterd, citroensap, zout en peper in een kleine kom tot een glad geheel.",
+      "Verdeel de gemengde sla over twee borden als basis.",
+      "Leg de groenten erop: tomaat, komkommer, paprika en rode ui verdeeld over de sla.",
+      "Verdeel de kipreepjes gelijkmatig over de twee borden.",
+      "Drizzle de honingmosterddressing royaal over de salade en serveer direct."
+    ],
+    "variations": "Wil je het gerecht wat steviger maken? Voeg dan wat gekookte quinoa of gekookte pasta toe. Geen kip bij de hand? Gerookte zalm of gebakken halloumi zijn heerlijke alternatieven. Voor een extra crunch kun je ook geroosterde pijnboompitten of gehakte walnoten toevoegen."
+  },
+  {
+    "id": 3,
+    "title": "Pancakes",
+    "image": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=800&q=80",
+    "category": "Ontbijt",
+    "description": "Zachte pannenkoeken perfect voor het ontbijt.",
+    "intro": "Deze pannenkoeken zijn heerlijk zacht en perfect voor een uitgebreid ontbijt of brunch. Met een paar eenvoudige ingrediënten zoals bloem, melk, eieren en een beetje suiker, maak je in een handomdraai deze klassieke pannenkoeken. Serveer ze met vers fruit, ahornsiroop of je favoriete toppings voor een smakelijke start van de dag.",
+    "ingredients": [
+      { "name": "200 g bloem", "description": "Gebruik gewone bloem voor de beste textuur." },
+      { "name": "300 ml melk", "description": "Volle melk maakt de pannenkoeken extra zacht." },
+      { "name": "2 eieren", "description": "Zorg voor verse eieren voor een luchtig beslag." },
+      { "name": "1 el suiker", "description": "Een beetje suiker voor een licht zoete smaak." },
+      { "name": "1 tl bakpoeder", "description": "Helpt de pannenkoeken rijzen en luchtig worden." },
+      { "name": "Snufje zout", "description": "Versterkt de smaak van het beslag." },
+      { "name": "Boter", "description": "Om de pan in te vetten tijdens het bakken." }
+    ],
+    "steps": [
+      "Meng bloem, suiker, bakpoeder en een snufje zout in een grote kom.",
+      "Klop de eieren los en voeg samen met de melk toe aan de droge ingrediënten. Roer met een garde tot een glad beslag zonder klontjes. Laat het beslag 5 minuten rusten.",
+      "Verhit een koekenpan op middelhoog vuur en smeer in met een klein klontje boter.",
+      "Schenk per pannenkoek een soeplepel beslag in de pan en verdeel licht rond.",
+      "Bak 2-3 minuten tot de bovenkant droog begint te worden en er bubbeltjes verschijnen. Draai om met een spatel.",
+      "Bak de andere kant nog 1-2 minuten tot goudbruin. Herhaal tot al het beslag op is.",
+      "Serveer warm met vers fruit, slagroom, stroop of poedersuiker naar keuze."
+    ],
+    "variations": "Je kunt de pannenkoeken aanpassen door bijvoorbeeld blauwe bessen, chocoladechips of banaan toe te voegen aan het beslag. Ook kun je verschillende toppings gebruiken zoals vers fruit, noten, honing of yoghurt voor extra smaak en textuur."
+  },
+  {
+    "id": 4,
+    "title": "Eggs Benedict",
+    "image": "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?w=800&q=80",
+    "category": "Ontbijt",
+    "description": "Geroosterd brood met gepocheerd ei, ham en Hollandaisesaus.",
+    "intro": "Eggs Benedict is hét klassieke brunchgerecht dat indruk maakt. Het bestaat uit een geroosterd Engelse muffin, belegd met ham, een zacht gepocheerd ei en de rijke Hollandaisesaus. Klinkt moeilijk, maar met dit recept lukt het ook thuis perfect. Dit recept is voor 2 personen en is klaar in 35 minuten.",
+    "ingredients": [
+      { "name": "2 Engelse muffins", "description": "Doormidden snijden en roosteren in de broodrooster." },
+      { "name": "4 plakjes ham", "description": "Gekookte ham of ontbijtspek, naar smaak." },
+      { "name": "4 eieren", "description": "Zo vers mogelijk voor de beste resultaten bij pocheren." },
+      { "name": "2 el witte wijnazijn", "description": "Voeg toe aan het pocheerwater zodat het eiwit compact blijft." },
+      { "name": "3 eierdooiers", "description": "Voor de Hollandaisesaus, op kamertemperatuur." },
+      { "name": "150 g boter", "description": "Geklaarde boter geeft de lekkerste Hollandaisesaus." },
+      { "name": "1 el citroensap", "description": "Voor frisheid in de saus." },
+      { "name": "Zout, peper en cayennepeper", "description": "Om de saus op smaak te brengen." }
+    ],
+    "steps": [
+      "Begin met de Hollandaisesaus: breng een pan water aan de kook. Klop in een hittebestendige kom de eierdooiers met citroensap au bain-marie (boven het kokende water, zonder de bodem aan te raken) tot het mengsel licht en romig is.",
+      "Voeg de geklaarde boter druppelsgewijs toe terwijl je blijft kloppen tot een dikke, glanzende saus ontstaat. Breng op smaak met zout en cayennepeper. Houd warm.",
+      "Breng in een brede pan water met de witte wijnazijn aan de kook. Zet het vuur lager zodat het water zacht trilt maar niet kookt.",
+      "Roer het water in een cirkelbeweging. Breek een ei in een kopje en laat het voorzichtig in het midden van het water glijden. Pocheer 3 minuten voor een zachte dooier. Herhaal met de overige eieren.",
+      "Rooster de Engelse muffins goudbruin in de broodrooster.",
+      "Beleg elke muffinhelft met een plakje ham.",
+      "Schep het gepocheerde ei met een schuimspaan uit het water, dep droog met keukenpapier en leg op de ham. Schep royaal Hollandaisesaus erover en serveer direct."
+    ],
+    "variations": "Vervang de ham door gerookte zalm voor een luxueuze variant (ook wel Eggs Royale genoemd). Vegetarisch? Gebruik gebakken spinazie of gegrilde courgette in plaats van ham. Je kunt de Hollandaisesaus ook uit een pakje maken als je weinig tijd hebt."
+  },
+  {
+    "id": 5,
+    "title": "Deense broodjes met fruit",
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80",
+    "category": "Ontbijt",
+    "description": "Luchtige croissantdeeg krakeling met custard en vers fruit.",
+    "intro": "Deze Deense broodjes zijn een heerlijke combinatie van knapperig croissantdeeg, romige custard en vers seizoensfruit. Ze zijn perfect voor een uitgebreid ontbijt of brunch en zien er ook nog eens prachtig uit. Met dit recept maak je 6 broodjes, klaar in 50 minuten (inclusief 15 minuten oventijd).",
+    "ingredients": [
+      { "name": "1 rol croissantdeeg (280 g)", "description": "Kant-en-klaar croissantdeeg uit de koelkast." },
+      { "name": "200 ml volle melk", "description": "Voor de custardvulling." },
+      { "name": "3 eierdooiers", "description": "Voor een rijke, gele custard." },
+      { "name": "50 g suiker", "description": "Voor de zoetheid van de custard." },
+      { "name": "2 el maizena", "description": "Om de custard te binden." },
+      { "name": "1 tl vanille-extract", "description": "Geeft de custard een heerlijke vanillesmaak." },
+      { "name": "200 g gemengd vers fruit", "description": "Zoals aardbeien, mango, bosvruchten of kiwi." },
+      { "name": "1 ei (voor de bestrijking)", "description": "Losgeklopt, om de broodjes goudbruin te maken." }
+    ],
+    "steps": [
+      "Verwarm de oven voor op 200°C en bekleed een bakplaat met bakpapier.",
+      "Maak de custard: verhit de melk in een pan tot bijna kokend. Klop in een kom de eierdooiers, suiker en maizena glad.",
+      "Giet de warme melk al roerend in dunne stroom bij het eimengsel. Giet alles terug in de pan en roer op laag vuur tot de custard dik wordt. Roer vanille-extract erdoor. Dek af met plastic folie (direct op het oppervlak) en laat afkoelen.",
+      "Rol het croissantdeeg uit op een licht bebloemd werkblad en snijd in 6 gelijke vierkante stukjes.",
+      "Leg de deegstukjes op de bakplaat. Vouw de hoeken iets naar binnen om een opstaande rand te vormen. Druk licht aan.",
+      "Schep een royale eetlepel afgekoelde custard in het midden van elk broodje. Bestrijk de randen met losgeklopt ei.",
+      "Bak 12-15 minuten in de oven tot de broodjes goudbruin zijn. Laat 10 minuten afkoelen en beleg daarna met vers fruit."
+    ],
+    "variations": "Gebruik elk seizoensfruit dat je lekker vindt: aardbeien, frambozen, mango, perzik of kiwi. Je kunt ook een beetje gehakte pistache of geroosterde amandelen over de custard strooien voor extra textuur. Vervang de custard door mascarpone met een beetje poedersuiker voor een rijkere vulling."
+  },
+  {
+    "id": 6,
+    "title": "American Pancakes",
+    "image": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?w=800&q=80",
+    "category": "Ontbijt",
+    "description": "Dikke en luchtige Amerikaanse pannenkoekjes met bessen en siroop.",
+    "intro": "American pancakes zijn dikker en luchtiger dan gewone pannenkoeken en dat maakt ze zo onweerstaanbaar. Het geheim zit in de karnemelk en het bakpoeder, waardoor je perfect luchtige stapeltjes krijgt. Serveer ze met verse bessen, ahornsiroop en een klontje boter voor het ultieme ontbijt. Dit recept is voor 2 personen (±8 kleine pancakes) en klaar in 30 minuten.",
+    "ingredients": [
+      { "name": "150 g bloem", "description": "Gewone tarwebloem voor de lekkerste textuur." },
+      { "name": "1 tl bakpoeder", "description": "Zorgt voor de luchtige, dikke structuur." },
+      { "name": "½ tl baking soda", "description": "Werkt samen met de karnemelk voor extra rijzen." },
+      { "name": "1 el suiker", "description": "Voor een licht zoete smaak." },
+      { "name": "1 ei", "description": "Op kamertemperatuur voor het beste beslag." },
+      { "name": "200 ml karnemelk", "description": "Geeft de pancakes hun typische luchtige structuur." },
+      { "name": "30 g gesmolten boter", "description": "Voor een rijke smaak in het beslag." },
+      { "name": "Handvol verse bessen", "description": "Blauwe bessen of frambozen als topping." },
+      { "name": "Ahornsiroop", "description": "Naar smaak erover gieten bij het serveren." }
+    ],
+    "steps": [
+      "Meng bloem, bakpoeder, baking soda, suiker en een snufje zout in een grote kom.",
+      "Klop in een andere kom het ei los. Voeg de karnemelk en de gesmolten boter toe en meng goed.",
+      "Giet het natte mengsel bij de droge ingrediënten en roer tot net gecombineerd. Het beslag mag nog wat klonterig zijn – niet te veel roeren, anders worden de pancakes taai!",
+      "Laat het beslag 5 minuten rusten zodat het bakpoeder zijn werk kan doen.",
+      "Verhit een koekenpan op middelhoog vuur en vet licht in met een klein stukje boter.",
+      "Schep 2-3 eetlepels beslag per pancake in de pan. Bak tot er bubbels verschijnen op het oppervlak en de randen droog zien (±2 minuten). Draai om en bak nog 1-2 minuten.",
+      "Stapel de pancakes op een bord en serveer warm met verse bessen en royaal ahornsiroop."
+    ],
+    "variations": "Voeg blauwe bessen, bananenschijfjes of chocoladestukjes toe aan het beslag voor extra smaak. Vegan? Vervang de eieren door 2 el lijnzaad met water en gebruik plantaardige melk. Serveer met Griekse yoghurt en honing in plaats van siroop voor een lichtere variant."
+  },
+  {
+    "id": 8,
+    "title": "Plaattaart met gehakt",
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80",
+    "category": "Diner",
+    "description": "Knapperige plaattaart met gekruid gehakt, paprika en gesmolten kaas.",
+    "intro": "Deze plaattaart met gehakt is een super makkelijk en smaakvol recept dat het hele gezin lekker vindt. Met kant-en-klaar bladerdeeg als basis heb je snel een gevulde taart op tafel. Perfect voor door de week, klaar in 40 minuten (15 minuten bereiden + 25 minuten oventijd). Dit recept is voor 4 personen.",
+    "ingredients": [
+      { "name": "1 rol bladerdeeg (270 g)", "description": "Kant-en-klaar bladerdeeg uit de koelkast, op kamertemperatuur laten komen." },
+      { "name": "400 g rundergehakt", "description": "Magere rundergehakt of half-om-half voor meer smaak." },
+      { "name": "150 ml tomatenpassata", "description": "Als smaakvolle basis op het deeg." },
+      { "name": "1 rode paprika", "description": "In dunne reepjes gesneden." },
+      { "name": "1 rode ui", "description": "In halve ringen gesneden." },
+      { "name": "100 g champignons", "description": "In plakjes gesneden." },
+      { "name": "150 g geraspte kaas", "description": "Gouda of Cheddar, royaal bestrooien." },
+      { "name": "2 tl Italiaanse kruiden", "description": "Of een mix van oregano, tijm en basilicum." },
+      { "name": "1 tl paprikapoeder", "description": "Voor extra smaak in het gehakt." },
+      { "name": "Zout en peper", "description": "Naar smaak voor het gehakt." },
+      { "name": "1 el olijfolie", "description": "Om het gehakt in te bakken." }
+    ],
+    "steps": [
+      "Verwarm de oven voor op 200°C. Bekleed een bakplaat met bakpapier.",
+      "Verhit de olijfolie in een koekenpan op hoog vuur. Bak het gehakt rul en bruin. Breng op smaak met paprikapoeder, Italiaanse kruiden, zout en peper. Laat iets afkoelen.",
+      "Rol het bladerdeeg uit op de bakplaat en prik de bodem meerdere keren in met een vork zodat hij niet te veel rijst.",
+      "Smeer de tomatenpassata gelijkmatig over het deeg, laat een rand van 1 cm vrij.",
+      "Verdeel het gebakken gehakt over de passata.",
+      "Beleg met de paprikareepjes, uienringen en champignons.",
+      "Bestrooi royaal met geraspte kaas. Bak 22-25 minuten in de oven tot de korst goudbruin en knapperig is en de kaas gesmolten. Snijd in stukken en serveer direct."
+    ],
+    "variations": "Vervang het gehakt door kipreepjes of vegetarisch gehakt voor een andere variant. Voeg jalapeños of chilipeper toe voor een pittige twist. Je kunt ook spinazie, courgette of mais toevoegen als extra groenten."
+  },
+  {
+    "id": 9,
+    "title": "Gyoza curry met paksoi",
+    "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=800&q=80",
+    "category": "Diner",
+    "description": "Romige kokos-currysaus met gyoza-dumplings en verse paksoi.",
+    "intro": "Dit is een snel en verrassend lekker recept waarbij kant-en-klare gyoza dumplings in een romige kokosmelk-currysaus worden gegaard. De paksoi zorgt voor een frisse bite en de limoen maakt het gerecht helemaal af. Klaar in 30 minuten en perfect voor 2-3 personen.",
+    "ingredients": [
+      { "name": "400 g gyoza dumplings", "description": "Diepvries gyoza (varkensvlees of groente), niet ontdooien." },
+      { "name": "1 paksoi", "description": "In stukken gesneden, stelen en blaadjes apart houden." },
+      { "name": "400 ml kokosmelk", "description": "Volle kokosmelk voor de romigste saus." },
+      { "name": "2 el rode currypasta", "description": "Naar smaak meer of minder voor de gewenste pittigheid." },
+      { "name": "2 teentjes knoflook", "description": "Fijngehakt of geperst." },
+      { "name": "1 tl verse gember", "description": "Geraspt, geeft een frisse smaak." },
+      { "name": "2 el sojasaus", "description": "Voor zoutigheid en diepgang in de saus." },
+      { "name": "1 tl sesamolie", "description": "Voor een nootachtige afdronk." },
+      { "name": "1 limoen", "description": "Rasp en sap voor frisheid." },
+      { "name": "1 el zonnebloemolie", "description": "Om in te bakken." },
+      { "name": "Verse koriander", "description": "Als garnering bij het serveren." }
+    ],
+    "steps": [
+      "Verhit de olie in een diepe koekenpan of wok op middelhoog vuur. Bak de knoflook en gember 1 minuut tot geurig.",
+      "Voeg de rode currypasta toe en bak nog 1 minuut mee terwijl je roert.",
+      "Giet de kokosmelk erbij en roer goed door. Voeg sojasaus en sesamolie toe.",
+      "Breng de saus zachtjes aan de kook. Leg de bevroren gyoza dumplings erin en laat 8-10 minuten zachtjes garen met het deksel op de pan.",
+      "Voeg de paksoistelen toe en kook 3 minuten mee. Voeg daarna de paksoiblaadjes toe en kook nog 1-2 minuten.",
+      "Proef de saus en breng op smaak met limoensap, extra sojasaus of currypasta naar wens.",
+      "Serveer direct in diepe kommen, garneer met verse koriander en limoenschijfjes."
+    ],
+    "variations": "Vervang de gyoza door tofu-blokjes of garnalen voor een andere proteïne. Voeg shiitake-paddenstoelen of babycorn toe voor extra textuur. Wil je het gerecht steviger? Serveer met gestoomde rijst of rijstnoedels."
+  },
+  {
+    "id": 10,
+    "title": "Harira soep",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
+    "category": "Diner",
+    "description": "Traditionele Marokkaanse soep met linzen, kikkererwten en kruiden.",
+    "intro": "Harira is een rijke en voedzame Marokkaanse soep die traditioneel tijdens de ramadan wordt gegeten, maar het hele jaar door heerlijk is. De combinatie van linzen, kikkererwten, tomaten en warme kruiden als kurkuma en kaneel maakt deze soep bijzonder smaakvol. Klaar in 30 minuten en voldoende voor 4 personen.",
+    "ingredients": [
+      { "name": "200 g lamsgehakt of rundergehakt", "description": "In kleine balletjes draaien of grof aanbraden. Weglaten voor vegetarische versie." },
+      { "name": "1 blik kikkererwten (400 g)", "description": "Uitgelekt en afgespoeld." },
+      { "name": "150 g rode linzen", "description": "Gespoeld, hoeven niet geweekt te worden." },
+      { "name": "1 blik gepelde tomaten (400 g)", "description": "Of 4 verse rijpe tomaten, grof gehakt." },
+      { "name": "1 grote ui", "description": "Fijngehakt." },
+      { "name": "3 teentjes knoflook", "description": "Fijngehakt of geperst." },
+      { "name": "1 tl kurkuma", "description": "Geeft de soep zijn goudgele kleur." },
+      { "name": "1 tl komijn", "description": "Gemalen, voor warme diepte in de smaak." },
+      { "name": "½ tl kaneel", "description": "Geeft de soep zijn typische Marokkaanse karakter." },
+      { "name": "1 tl paprikapoeder", "description": "Zoet of gerookt naar voorkeur." },
+      { "name": "1 l groenten- of kippenbouillon", "description": "Voor de basis van de soep." },
+      { "name": "Verse koriander en peterselie", "description": "Grof gehakt, royaal toevoegen aan het einde." },
+      { "name": "1 citroen", "description": "Vers sap, vlak voor het serveren." },
+      { "name": "2 el olijfolie", "description": "Om ui en knoflook in te fruiten." }
+    ],
+    "steps": [
+      "Verhit de olijfolie in een grote soeppan op middelhoog vuur. Bak de ui 5 minuten zacht en glazig.",
+      "Voeg de knoflook toe en bak 1 minuut mee. Voeg daarna kurkuma, komijn, kaneel en paprikapoeder toe en roer 30 seconden door zodat de kruiden gaan geuren.",
+      "Voeg het gehakt toe (indien gebruikt) en bak tot het rondom bruin is.",
+      "Voeg de gepelde tomaten toe en pureer ze grof met een houten lepel in de pan. Laat 3 minuten inkoken.",
+      "Voeg de rode linzen, kikkererwten en bouillon toe. Breng aan de kook.",
+      "Verlaag het vuur en laat de soep 15-18 minuten zachtjes pruttelen tot de linzen gaar en zacht zijn. Roer af en toe.",
+      "Breng op smaak met zout, peper en vers citroensap. Roer vlak voor het serveren royaal verse koriander en peterselie erdoor. Serveer met Marokkaans brood of knapperig stokbrood."
+    ],
+    "variations": "Voor een volledig vegetarische versie laat je het vlees weg en voeg je extra kikkererwten toe. Wil je de soep romiger? Voeg een blik kokosmelk toe. Je kunt ook verse gember of harissa-pasta toevoegen voor extra pit."
+  },
+  {
+    "id": 7,
+    "title": "Granola met koffie",
+    "image": "https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=800&q=80",
+    "category": "Ontbijt",
+    "description": "Knapperige zelfgemaakte granola met een vleugje koffiesmaak.",
+    "intro": "Ben jij ook zo'n koffieliefhebber? Dan is deze koffiegranola echt iets voor jou. Door espressopoeder toe te voegen aan de granola krijg je een heerlijke koffiesmaak die perfect samengaat met yoghurt of melk. Dit recept is heel simpel en je maakt in één keer een grote pot die wekenlang meegaat. Bereidingstijd: 10 minuten + 15 minuten in de oven.",
+    "ingredients": [
+      { "name": "300 g havervlokken", "description": "Gebruik grove havervlokken voor de beste crunch." },
+      { "name": "2 tl espressopoeder", "description": "Geeft de granola zijn kenmerkende koffiesmaak." },
+      { "name": "3 el honing of ahornsiroop", "description": "Als natuurlijk zoetmiddel dat de granola laat karamelliseren." },
+      { "name": "3 el olijfolie of kokosolie", "description": "Zorgt ervoor dat de granola goudbruin en knapperig wordt." },
+      { "name": "50 g gemengde noten", "description": "Walnoten, amandelen of hazelnoten, grof gehakt." },
+      { "name": "50 g pompoenpitten", "description": "Voor extra crunch en voedingsstoffen." },
+      { "name": "1 tl vanille-extract", "description": "Voor een ronde, warme smaak." },
+      { "name": "Snufje zout", "description": "Versterkt alle smaken in de granola." }
+    ],
+    "steps": [
+      "Verwarm de oven voor op 160°C en bekleed een grote bakplaat met bakpapier.",
+      "Meng in een grote kom de havervlokken, gehakte noten, pompoenpitten en espressopoeder door elkaar.",
+      "Voeg honing (of ahornsiroop), olie, vanille-extract en zout toe aan het havermengsel. Roer alles goed door zodat alle vlokken en noten gelijkmatig bedekt zijn.",
+      "Spreid het mengsel in een egale laag uit over de bakplaat. Druk licht aan.",
+      "Bak 15 minuten in de oven. Roer halverwege (na 7-8 minuten) zodat de granola gelijkmatig goudbruin wordt.",
+      "Haal uit de oven als de granola lichtgoudbruin is. Laat volledig afkoelen op de bakplaat – tijdens het afkoelen wordt hij pas echt knapperig, dus niet roeren!",
+      "Bewaar in een luchtdichte pot op kamertemperatuur. Serveer met volle yoghurt, melk of als topping op smoothie bowl."
+    ],
+    "variations": "Voeg gedroogde cranberry's, rozijnen of gehakte dadels toe voor extra zoetheid. Geen fan van koffie? Laat het espressopoeder weg en voeg een theelepel kaneel toe voor een warming spice granola. Bewaar de granola in een luchtdichte pot op kamertemperatuur, dan blijft hij 3 weken knapperig."
+  }
+]
