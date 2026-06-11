@@ -47,6 +47,8 @@
 
       <div class="border-t border-stone-900 py-5 text-center text-xs text-stone-600">
         © {{ new Date().getFullYear() }} Smaakvol — Alle rechten voorbehouden.
+        <span class="mx-2 text-stone-700">·</span>
+        Ontworpen door <span class="text-orange-400 font-semibold">Yehea Sammour</span>
       </div>
     </footer>
   </div>
