@@ -21,6 +21,9 @@
           <p class="text-sm leading-relaxed text-stone-500">
             Heerlijke recepten voor elk moment van de dag — simpel, lekker en voor iedereen.
           </p>
+          <p class="text-xs text-stone-600 mt-4">
+            Ontworpen door <span class="text-orange-400 font-semibold">Yehea Sammour</span>
+          </p>
         </div>
 
         <!-- Links -->
@@ -47,8 +50,6 @@
 
       <div class="border-t border-stone-900 py-5 text-center text-xs text-stone-600">
         © {{ new Date().getFullYear() }} Smaakvol — Alle rechten voorbehouden.
-        <span class="mx-2 text-stone-700">·</span>
-        Ontworpen door <span class="text-orange-400 font-semibold">Yehea Sammour</span>
       </div>
     </footer>
   </div>
