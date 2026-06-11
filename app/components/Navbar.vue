@@ -43,11 +43,9 @@ const navClass = computed(() => {
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-2.5 group no-underline">
         <span class="text-2xl transition-transform group-hover:scale-110 inline-block">🍽️</span>
-        <div>
+        <div class="flex flex-col leading-tight">
           <span class="font-serif text-white text-xl font-bold tracking-tight">Smaakvol</span>
-          <p class="text-white/60 text-[10px] leading-none mt-0.5 hidden sm:block">
-            by <span class="text-orange-200 font-semibold">Yehea Sammour</span>
-          </p>
+          <span class="text-orange-200 text-xs font-medium opacity-90">by Yehea Sammour</span>
         </div>
       </NuxtLink>
 
