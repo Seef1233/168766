@@ -5,18 +5,18 @@ import allRecipes from '../../data/recipes.json'
 const route = useRoute()
 const router = useRouter()
 
-// البحث عن الوصفة باستخدام المعرف من الرابط
+// Zoek het recept op basis van het ID in de URL
 const recipe = allRecipes.find(r => r.id.toString() === route.params.id)
 
 if (!recipe) {
-  // إعادة التوجيه في حال عدم وجود الوصفة
+  // Redirect als het recept niet wordt gevonden
   router.push('/recipes')
 }
 </script>
 
 <template>
-  <div v-if="recipe" class="min-h-screen bg-stone-50 pb-20" dir="rtl">
-    <!-- Hero Section مع تأثيرات حركية -->
+  <div v-if="recipe" class="min-h-screen bg-stone-50 pb-20" dir="ltr">
+    <!-- Hero Section met zoom-animatie -->
     <div class="relative h-[450px] overflow-hidden group">
       <img 
         :src="recipe.image" 
@@ -27,8 +27,8 @@ if (!recipe) {
       
       <div class="relative z-10 h-full max-w-5xl mx-auto px-6 flex flex-col justify-end pb-12 animate-fade-in">
         <NuxtLink to="/recipes" class="text-orange-400 hover:text-orange-300 transition-colors mb-6 flex items-center gap-2 group/back w-fit">
-          <svg class="w-5 h-5 transition-transform group-hover/back:translate-x-1 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          العودة إلى القائمة
+          <svg class="w-5 h-5 transition-transform group-hover/back:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          Terug naar het overzicht
         </NuxtLink>
         <div class="flex items-center gap-4 mb-4">
           <span class="bg-orange-600 text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-lg">{{ recipe.category }}</span>
@@ -44,30 +44,33 @@ if (!recipe) {
     <div class="max-w-5xl mx-auto px-6 -mt-12 relative z-20">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
         
-        <!-- المكونات -->
+        <!-- Ingrediënten Sectie -->
         <div class="lg:col-span-1">
           <div class="bg-white rounded-[2rem] shadow-2xl p-8 sticky top-8 animate-slide-right">
             <h2 class="text-2xl font-serif font-bold text-stone-800 mb-8 flex items-center gap-3">
-              <span class="bg-orange-100 p-2 rounded-xl text-2xl">🌿</span> المكونات
+              <span class="bg-orange-100 p-2 rounded-xl text-2xl">🌿</span> Ingrediënten
             </h2>
             <ul class="space-y-5">
-              <li v-for="(ingredient, index) in recipe.ingredients" :key="index" class="flex items-center gap-4 text-stone-600 group">
-                <span class="w-2.5 h-2.5 rounded-full bg-orange-400 transition-transform group-hover:scale-150"></span>
-                <span class="text-lg">{{ ingredient }}</span>
+              <li v-for="(ingredient, index) in recipe.ingredients" :key="index" class="text-stone-600 group">
+                <div class="flex items-center gap-4">
+                  <span class="w-2.5 h-2.5 rounded-full bg-orange-400 transition-transform group-hover:scale-150"></span>
+                  <span class="text-lg font-bold">{{ ingredient.name }}</span>
+                </div>
+                <p v-if="ingredient.description" class="text-sm opacity-70 ml-6.5 mt-1 leading-snug">{{ ingredient.description }}</p>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- طريقة التحضير والفيديو -->
+        <!-- Bereiding en Video -->
         <div class="lg:col-span-2 space-y-10">
           <div class="bg-white rounded-[2rem] shadow-2xl p-8 animate-slide-left">
             <h2 class="text-2xl font-serif font-bold text-stone-800 mb-10 flex items-center gap-3">
-              <span class="bg-orange-100 p-2 rounded-xl text-2xl">👨‍🍳</span> طريقة التحضير
+              <span class="bg-orange-100 p-2 rounded-xl text-2xl">👨‍🍳</span> Bereidingswijze
             </h2>
             <div class="space-y-12">
-              <div v-for="(step, index) in recipe.instructions" :key="index" class="relative pr-16 border-r-2 border-orange-50 mr-4">
-                <div class="absolute -right-5 top-0 w-10 h-10 bg-orange-500 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg shadow-orange-200">
+              <div v-for="(step, index) in recipe.steps" :key="index" class="relative pl-16 border-l-2 border-orange-50 ml-4">
+                <div class="absolute -left-5 top-0 w-10 h-10 bg-orange-500 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg shadow-orange-200">
                   {{ index + 1 }}
                 </div>
                 <p class="text-stone-600 leading-relaxed text-xl">
@@ -77,11 +80,11 @@ if (!recipe) {
             </div>
           </div>
 
-          <!-- الفيديو -->
+          <!-- Video Sectie -->
           <div v-if="recipe.videoUrl" class="bg-white rounded-[2rem] shadow-2xl overflow-hidden animate-fade-in-up">
             <div class="p-8 pb-4">
                <h2 class="text-2xl font-serif font-bold text-stone-800 flex items-center gap-3">
-                <span class="bg-orange-100 p-2 rounded-xl text-2xl">🎬</span> فيديو الوصفة
+                <span class="bg-orange-100 p-2 rounded-xl text-2xl">🎬</span> Recept Video
               </h2>
             </div>
             <div class="aspect-video w-full p-4">
