@@ -1,102 +1,163 @@
 <script setup>
 import recipes from '../data/recipes.json'
 
+const searchQuery = ref('')
+
 const categories = [
-  { name: 'Ontbijt', icon: '🍳', description: 'Start de dag goed' },
-  { name: 'Lunch',   icon: '🥗', description: 'Licht en lekker' },
-  { name: 'Diner',   icon: '🍝', description: 'Heerlijk avondeten' },
+  { name: 'Ontbijt', icon: '🍳', description: 'Start de dag goed', color: 'from-amber-400 to-orange-400', to: '/recipes?category=Ontbijt' },
+  { name: 'Lunch',   icon: '🥗', description: 'Licht en lekker',   color: 'from-emerald-400 to-teal-400',  to: '/recipes?category=Lunch' },
+  { name: 'Diner',   icon: '🍝', description: 'Heerlijk avondeten', color: 'from-violet-400 to-indigo-500', to: '/recipes?category=Diner' },
 ]
 
 const stats = [
-  { value: recipes.length, label: 'Recepten' },
-  { value: 3, label: 'Categorieën' },
-  { value: '30 min', label: 'Gemiddelde tijd' },
+  { value: recipes.length, label: 'Recepten', icon: '📖' },
+  { value: 3,              label: 'Categorieën', icon: '🗂️' },
+  { value: '30 min',       label: 'Gemiddelde tijd', icon: '⏱️' },
 ]
 
 const featured = recipes.find(r => r.id === 10)
+const latestRecipes = [...recipes].slice(-6).reverse()
+
+const goSearch = () => {
+  if (searchQuery.value.trim()) {
+    navigateTo(`/recipes?search=${encodeURIComponent(searchQuery.value.trim())}`)
+  }
+}
 </script>
 
 <template>
   <div>
 
-    <!-- Hero Section -->
-    <section class="relative h-[480px] flex items-center justify-center text-center text-white overflow-hidden">
+    <!-- ── Hero ── -->
+    <section class="relative h-[520px] flex items-end justify-center overflow-hidden">
       <img
         src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=80"
         alt="Food background"
-        class="absolute inset-0 w-full h-full object-cover"
+        class="absolute inset-0 w-full h-full object-cover scale-105"
+        style="animation: subtleZoom 12s ease-in-out infinite alternate;"
       />
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 px-6 max-w-2xl mx-auto">
-        <h1 class="text-5xl font-bold mb-4 leading-tight text-white">
-          Ontdek heerlijke recepten
+      <div class="absolute inset-0 hero-overlay"></div>
+
+      <div class="relative z-10 w-full max-w-2xl mx-auto px-6 pb-16 text-center animate-fade-in-up">
+        <p class="text-orange-300 font-semibold text-sm uppercase tracking-widest mb-3">Welkom bij Smaakvol</p>
+        <h1 class="text-5xl font-extrabold text-white leading-tight mb-4 text-shadow">
+          Ontdek heerlijke<br><span class="gradient-text">recepten</span>
         </h1>
-        <p class="text-lg text-white/85 mb-8">
+        <p class="text-white/80 text-lg mb-8">
           Makkelijk te maken gerechten voor elk moment van de dag.
         </p>
-        <NuxtLink
-          to="/recipes"
-          class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full transition-colors text-lg shadow-lg"
-        >
-          Bekijk recepten →
-        </NuxtLink>
-      </div>
-    </section>
 
-    <!-- Stats -->
-    <section class="bg-orange-500">
-      <div class="max-w-5xl mx-auto px-6 py-8 grid grid-cols-3 divide-x divide-orange-400">
-        <div v-for="stat in stats" :key="stat.label" class="text-center text-white px-4">
-          <p class="text-3xl font-bold">{{ stat.value }}</p>
-          <p class="text-orange-100 text-sm mt-1">{{ stat.label }}</p>
+        <!-- Search bar -->
+        <div class="flex gap-2 max-w-lg mx-auto">
+          <input
+            v-model="searchQuery"
+            type="text"
+            placeholder="Zoek een recept..."
+            class="search-input shadow-lg flex-1"
+            @keyup.enter="goSearch"
+          />
+          <button
+            @click="goSearch"
+            class="bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-full shadow-lg transition-colors shrink-0"
+          >
+            Zoeken
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- Categories -->
-    <section class="max-w-5xl mx-auto px-6 py-14">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Categorieën</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <NuxtLink
-          v-for="cat in categories"
-          :key="cat.name"
-          :to="`/recipes?category=${cat.name}`"
-          class="flex items-center gap-4 bg-white rounded-2xl shadow-sm border border-gray-100 px-6 py-5 hover:shadow-md transition-shadow"
+    <!-- ── Stats bar ── -->
+    <section class="bg-gradient-to-r from-orange-500 to-orange-400">
+      <div class="max-w-4xl mx-auto px-6 py-7 grid grid-cols-3 divide-x divide-orange-300/50">
+        <div
+          v-for="(stat, i) in stats"
+          :key="stat.label"
+          class="stat-item text-white px-4 animate-fade-in-up"
+          :class="`delay-${(i + 1) * 100}`"
         >
-          <span class="text-4xl">{{ cat.icon }}</span>
-          <div>
-            <p class="font-bold text-gray-900 text-lg">{{ cat.name }}</p>
-            <p class="text-gray-500 text-sm">{{ cat.description }}</p>
+          <span class="text-2xl mb-1">{{ stat.icon }}</span>
+          <p class="text-3xl font-extrabold">{{ stat.value }}</p>
+          <p class="text-orange-100 text-sm">{{ stat.label }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Categories ── -->
+    <section class="max-w-5xl mx-auto px-6 py-14">
+      <div class="flex items-center justify-between mb-7">
+        <h2 class="text-2xl font-extrabold text-gray-900">Categorieën</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+        <NuxtLink
+          v-for="(cat, i) in categories"
+          :key="cat.name"
+          :to="cat.to"
+          class="relative overflow-hidden rounded-2xl shadow-sm card-hover animate-fade-in-up"
+          :class="`delay-${(i + 1) * 100}`"
+        >
+          <div class="absolute inset-0 bg-gradient-to-br opacity-90" :class="cat.color"></div>
+          <div class="relative z-10 flex items-center gap-4 px-6 py-6">
+            <span class="text-5xl drop-shadow-sm">{{ cat.icon }}</span>
+            <div>
+              <p class="font-extrabold text-white text-lg">{{ cat.name }}</p>
+              <p class="text-white/80 text-sm">{{ cat.description }}</p>
+            </div>
           </div>
         </NuxtLink>
       </div>
     </section>
 
-    <!-- Featured Recipe -->
-    <section v-if="featured" class="max-w-5xl mx-auto px-6 pb-16">
-      <h2 class="text-2xl font-bold text-gray-900 mb-6">Recept van de dag</h2>
-      <div class="relative rounded-3xl overflow-hidden shadow-lg h-72 flex items-end">
+    <!-- ── Recept van de dag ── -->
+    <section v-if="featured" class="max-w-5xl mx-auto px-6 pb-10">
+      <h2 class="text-2xl font-extrabold text-gray-900 mb-6">Recept van de dag</h2>
+      <div class="relative rounded-3xl overflow-hidden shadow-xl h-80 flex items-end card-hover">
         <img
           :src="featured.image"
           :alt="featured.title"
           class="absolute inset-0 w-full h-full object-cover"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+        <div class="absolute inset-0 hero-overlay"></div>
         <div class="relative z-10 p-8 flex items-end justify-between w-full">
           <div>
-            <span class="text-xs font-semibold text-orange-300 uppercase tracking-wider">{{ featured.category }}</span>
-            <h3 class="text-3xl font-bold text-white mt-1 mb-2">{{ featured.title }}</h3>
-            <p class="text-white/80 text-sm max-w-lg">{{ featured.description }}</p>
+            <span class="text-xs font-bold text-orange-300 uppercase tracking-wider">{{ featured.category }}</span>
+            <h3 class="text-3xl font-extrabold text-white mt-1 mb-1.5 text-shadow">{{ featured.title }}</h3>
+            <p class="text-white/75 text-sm max-w-lg line-clamp-2">{{ featured.description }}</p>
           </div>
           <NuxtLink
             :to="`/recipes/${featured.id}`"
-            class="shrink-0 ml-6 bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full transition-colors shadow-md"
+            class="shrink-0 ml-6 bg-orange-500 hover:bg-orange-400 text-white font-bold px-6 py-3 rounded-full transition-colors shadow-lg"
           >
-            Bekijk recept →
+            Bekijk →
           </NuxtLink>
         </div>
       </div>
     </section>
 
+    <!-- ── Nieuwste recepten ── -->
+    <section class="max-w-5xl mx-auto px-6 pb-16">
+      <div class="flex items-center justify-between mb-7">
+        <h2 class="text-2xl font-extrabold text-gray-900">Nieuwste recepten</h2>
+        <NuxtLink to="/recipes" class="text-sm font-semibold text-orange-500 hover:text-orange-600 transition-colors">
+          Alle recepten →
+        </NuxtLink>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <RecipeCard
+          v-for="(recipe, i) in latestRecipes"
+          :key="recipe.id"
+          :recipe="recipe"
+          class="animate-fade-in-up"
+          :style="`animation-delay: ${i * 0.07}s`"
+        />
+      </div>
+    </section>
+
   </div>
 </template>
+
+<style scoped>
+@keyframes subtleZoom {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.12); }
+}
+</style>
